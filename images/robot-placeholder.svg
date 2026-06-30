@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">Robot placeholder</title>
+  <desc id="desc">A simple robot illustration used as a placeholder for projects without an image.</desc>
+  <rect width="320" height="240" rx="28" fill="#f3f7fb"/>
+  <circle cx="160" cy="120" r="78" fill="#dfe9f5"/>
+  <rect x="96" y="58" width="128" height="112" rx="22" fill="#1772d0"/>
+  <rect x="110" y="72" width="100" height="84" rx="16" fill="#ffffff"/>
+  <circle cx="138" cy="112" r="11" fill="#1772d0"/>
+  <circle cx="182" cy="112" r="11" fill="#1772d0"/>
+  <rect x="136" y="132" width="48" height="10" rx="5" fill="#f09228"/>
+  <rect x="148" y="40" width="24" height="20" rx="8" fill="#1772d0"/>
+  <circle cx="160" cy="34" r="10" fill="#f09228"/>
+  <rect x="74" y="92" width="22" height="12" rx="6" fill="#1772d0"/>
+  <rect x="224" y="92" width="22" height="12" rx="6" fill="#1772d0"/>
+  <rect x="118" y="170" width="18" height="28" rx="8" fill="#1772d0"/>
+  <rect x="184" y="170" width="18" height="28" rx="8" fill="#1772d0"/>
+</svg>

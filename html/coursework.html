@@ -1,0 +1,93 @@
+<html>
+<head>
+
+    <style>
+      .gap {
+        width: 90%;
+        height: 20px;
+      }
+      button {
+        background-color: white;
+        border: 1px solid #1772d0;
+        border-radius: 8px;
+        color: #1772d0;
+        padding: 6px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      button:hover {
+        border: 1px solid #f09228;
+        color: #f09228;
+        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24), 0 8px 10px 0 rgba(0,0,0,0.19);
+      }
+      button:focus {
+        border-radius: 8px;
+        border: 1px solid #f09228;
+        color: #f09228;
+        outline: none;
+      }
+      caption {
+        font-weight: 700;
+        font-size: 130%;
+        text-align: left;
+      }
+      th {
+        font-weight: 700;
+        padding: 8px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+      }
+      td {
+        padding: 7px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      .course_row:hover {background-color:#f5f5f5;}
+    </style>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <link rel="icon" type="image/x-icon" href="../images/hexagon.ico?v=2">
+  <script type="text/javascript" src="../js/gtag.js"></script>
+  <title>Paolo Giaretta</title>
+  <meta name="Paolo's Homepage" http-equiv="Content-Type" content="Paolo's Homepage">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<table style="width:100%;max-width:840px;" border="0" align="center" cellspacing="0" cellpadding="20">
+  <tr><td>
+
+<div id="navbar_outer">
+<div id="navbar_tab">
+<ul id="navbar">
+  <li><a class="home_nav" href="../index.html#home" onclick="make_active('home')">Home</a></li>
+  <li><a class="research_nav" href="../index.html#research" onclick="make_active('research')">Research</a></li>
+  <li><a class="honor_nav" href="../index.html#honor" onclick="make_active('honor')">Honors</a></li>
+  <li><a class="course_nav active" href="coursework.html">Coursework</a></li>
+  <li><a href="../data/CV_Paolo_Giaretta.pdf" target="_blank">CV</a></li>
+</ul></div></div>
+<br>
+
+<section class="course" id="course">
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <heading>Coursework</heading><br>
+    <p width="100%">Order by:
+      <button onclick="orderfield()">Field &raquo;</button>
+      <button onclick="orderdept()">Department &raquo;</button>
+      <button onclick="ordersem()">Term &raquo;</button>
+    </p>
+    <div id="course_tables" style="overflow-x:auto;"></div>
+    <p>* cum laude / honors.</p>
+  </table>
+</section>
+<script type="text/javascript" src="../js/course.js"></script>
+
+  </td></tr>
+</table>
+
+</body>
+</html>
