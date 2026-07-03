@@ -1,1 +1,1 @@
-This repository contains the source code for Paolo Giaretta's personal website. It is adapted from Youngjae Min's public academic website: https://youngjae-min.github.io/. If you reuse this code, please attribute the original website or this repo.
+This repository contains the source code for Paolo Giaretta's personal website: https://www.paologiaretta.com/. It is adapted from Youngjae Min's public academic website: https://youngjae-min.github.io/. If you reuse this code, please attribute the original website or this repo.
