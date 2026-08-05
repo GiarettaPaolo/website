@@ -112,6 +112,16 @@
       vertical-align: top;
   }
 
+  .project-visual.realdoor-visual {
+      background-color: transparent;
+      border-radius: 22%;
+  }
+
+  .project-visual.realdoor-visual:hover,
+  .project-visual.realdoor-visual:focus {
+      border-radius: 0;
+  }
+
   .project-visual-image {
       display: block;
       width: 100%;

@@ -9,11 +9,13 @@ const short_entries = [
 ];
 const long_entries = [
   selectElementByClass('research'),
+  selectElementByClass('projects'),
 ];
 
 const navItems = {
   home: selectElementByClass('home_nav'),
   research: selectElementByClass('research_nav'),
+  projects: selectElementByClass('projects_nav'),
   honor: selectElementByClass('honor_nav'),
 };
 
