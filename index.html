@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<table style="width:100%;max-width:840px;" border="0" align="center" cellspacing="0" cellpadding="20">
+<table style="width:100%;max-width:950px;" border="0" align="center" cellspacing="0" cellpadding="20">
   <tr><td>
 
 <section class="home" id="home">
@@ -121,9 +121,9 @@
       <p>
         <heading id="RealDoor">RealDoor - Affordable Housing Made Simple</heading><br>
         <b>Paolo Giaretta</b>,
-        <a href="https://github.com/RiccardoN4" target="_blank">Riccardo Neumarker</a>,
-        <a href="https://github.com/Chefcurry4" target="_blank">Massimo Perfetti</a>, and
-        <a href="https://github.com/EmaRimoldi" target="_blank">Emanuele Rimoldi</a><br>
+        Riccardo Neumarker,
+        Massimo Perfetti, and
+        Emanuele Rimoldi<br>
         <a href="https://www.linkedin.com/posts/hack-nation_%F0%9D%97%AA%F0%9D%97%B2-%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%83%F0%9D%97%B2-%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BF-%F0%9D%98%84%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%BB%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%80-24-hours-activity-7490023833358360576-epKP" target="_blank">1st Place, 6th Hack-Nation Global AI Hackathon</a> (2026).
       </p>
       <div class="paper" id="realdoor">
@@ -131,7 +131,27 @@
         <a href="https://github.com/GiarettaPaolo/realdoor-challenge" target="_blank">code</a> |
         <a href="javascript:toggleblock('realdoor_desc')">description</a>
         <p align="justify">
-          <i id="realdoor_desc" style="display:none;">Affordable housing is already scarce: nationwide, only <a href="https://nlihc.org/gap" target="_blank">35 affordable and available rental homes exist for every 100 extremely low-income renter households</a>, and just <a href="https://www.cbpp.org/research/housing/funding-limitations-create-widespread-unmet-need-for-rental-assistance" target="_blank">one in four eligible renter households receives federal rental assistance</a>. Even when opportunities exist, families can miss them because applications are buried under confusing requirements and paperwork.<br><strong>RealDoor</strong> clears that paper wall. Applicants upload what they have, confirm information extracted with traceable evidence, get cited answers about program rules, catch missing or expired documents early, and export a review-ready packet. AI reads, explains, and prepares; applicants stay in control, and qualified people make eligibility decisions.</i>
+          <i id="realdoor_desc" style="display:none;">Affordable housing is already scarce: nationwide, only <a href="https://nlihc.org/gap" target="_blank">35 affordable and available rental homes exist for every 100 extremely low-income renter households</a>, and just <a href="https://www.cbpp.org/research/housing/funding-limitations-create-widespread-unmet-need-for-rental-assistance" target="_blank">one in four eligible renter households receives federal rental assistance</a>. Even when opportunities exist, families can miss them because applications are buried under confusing requirements and paperwork. <strong>RealDoor</strong> clears that paper wall. Applicants upload what they have, confirm information extracted with traceable evidence, get cited answers about program rules, catch missing or expired documents early, and export a review-ready packet. AI reads, explains, and prepares; applicants stay in control, and qualified people make eligibility decisions.</i>
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr class="project-entry">
+    <td class="project-media-cell" width="26%" valign="top" align="center">
+      <a class="project-visual jaxtaylor-visual" href="https://github.com/GiarettaPaolo/jaxtaylor" target="_blank" aria-label="View the jaxtaylor repository on GitHub">
+        <img class="project-visual-image" src="images/jaxtaylor-graph.png" data-still-src="images/jaxtaylor-graph.png" data-hover-src="images/jaxtaylor-demo-hover.gif?v=2" alt="Taylor step computational graph for x' = sin(x+1)">
+      </a>
+    </td>
+    <td class="project-copy-cell" width="74%" valign="top">
+      <p>
+        <heading id="jaxtaylor">jaxtaylor - Fully Native Taylor Integration in JAX</heading><br>
+        <b>Paolo Giaretta</b>
+      </p>
+      <div class="paper" id="jaxtaylor_links">
+        <a href="https://github.com/GiarettaPaolo/jaxtaylor" target="_blank">code</a> |
+        <a href="javascript:toggleblock('jaxtaylor_desc')">description</a>
+        <p align="justify">
+          <i id="jaxtaylor_desc" style="display:none;"><strong>jaxtaylor</strong> is a native JAX high-order adaptive Taylor ODE integrator that reimplements the algorithm of <a href="https://github.com/bluescarni/heyoka" target="_blank">heyoka</a> (bit-exact step size) as a first-class JAX primitive, fully composable with <code>jit</code>, <code>vmap</code>, and <code>grad</code> without leaving JAX. Eager calls hit a compiled C kernel, <code>jit</code> lowers to an FFI custom call, <code>vmap</code> maps to a SIMD-across-batch kernel, and differentiation integrates the variational system on the same machinery &mdash; one entry point, no user-facing knobs. It is faster than heyoka on CPU in every regime measured, and batched integrations of small systems auto-route to a fused per-trajectory CUDA kernel that runs the whole adaptive loop in a single launch. It also ships event detection with Taylor-polynomial root isolation and a drop-in reimplementation of the <a href="https://github.com/bluescarni/heyoka.py" target="_blank">heyoka.py</a> API.</i>
         </p>
       </div>
     </td>
@@ -145,7 +165,7 @@
   <tr><td>
     <sectionheading>&nbsp;&nbsp;Honors and Awards</sectionheading>
     <ul>
-      <li><a href="https://www.linkedin.com/posts/hack-nation_%F0%9D%97%AA%F0%9D%97%B2-%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%83%F0%9D%97%B2-%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BF-%F0%9D%98%84%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%BB%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%80-24-hours-activity-7490023833358360576-epKP" target="_blank"><strong>1st Place, 6th Hack-Nation Global AI Hackathon</strong></a>, for RealDoor - Affordable Housing Made Simple (2026).</li>
+      <li><a href="https://www.linkedin.com/posts/hack-nation_%F0%9D%97%AA%F0%9D%97%B2-%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%83%F0%9D%97%B2-%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BF-%F0%9D%98%84%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%BB%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%80-24-hours-activity-7490023833358360576-epKP" target="_blank"><strong>1st Place, 6th Hack-Nation Global AI Hackathon</strong></a>, selected among 5,500+ applicants (2026).</li>
       <li><a href="https://www.epfl.ch/education/master/master-excellence-fellowships/" target="_blank"><strong>EPFL Excellence Fellowship</strong></a>, awarded to the top 3% of incoming Master's students (2023-2026).</li>
       <li>Best Freshman Prize, Politecnico di Milano (2020).</li>
       <li><a href="https://www.icho-official.org/results/results.php?id=51&amp;year=2019" target="_blank"><strong>Gold Medal</strong></a>, International Chemistry Olympiad (IChO 2019).</li>

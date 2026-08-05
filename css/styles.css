@@ -122,6 +122,10 @@
       border-radius: 0;
   }
 
+  .project-visual.jaxtaylor-visual {
+      background-color: transparent;
+  }
+
   .project-visual-image {
       display: block;
       width: 100%;
