@@ -1,10 +1,36 @@
 /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta*/
+  :root {
+    --bg: #ffffff;
+    --text: #000000;
+    --link: #1772d0;
+    --link-hover: #f09228;
+    --navbar-bg: rgba(255, 255, 255, 0.85);
+    --nav-link: #555555;
+    --media-bg: #f7f7f7;
+  }
+  [data-theme="dark"] {
+    --bg: #131a24;
+    --text: #d9dee6;
+    --link: #6db3f2;
+    --link-hover: #f0a04a;
+    --navbar-bg: rgba(19, 26, 36, 0.85);
+    --nav-link: #9aa5b5;
+    --media-bg: #1e2734;
+  }
+  html {
+    background-color: var(--bg);
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color .35s ease, color .35s ease;
+  }
   a {
-  color: #1772d0;
+  color: var(--link);
   text-decoration:none;
   }
   a:focus, a:hover {
-  color: #f09228;
+  color: var(--link-hover);
   text-decoration:none;
   }
   body,td,th {
@@ -38,11 +64,12 @@
     font-weight: 400
   }
   #navbar_outer {
-    padding: 7px;
-    border: 1px solid #e7e7e7;
-    border-left: none;
-    border-right: none;
-    background-color: white; /*#f3f3f3; */
+    padding: 5px;
+    border: none;
+    background-color: var(--navbar-bg);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color .35s ease;
     overflow: hidden;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -63,18 +90,24 @@
   }
   #navbar li a {
     display: block;
-    color: black; /*#666;*/
+    color: var(--nav-link);
     text-align: center;
-    padding: 5px;
-    margin: 0 0 0 10px;
+    padding: 5px 2px;
+    margin: 0 0 0 22px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color .2s ease;
+  }
+  #navbar li:first-child a {
+    margin-left: 0;
   }
   #navbar li a:hover {
-      color: #f09228;
+      color: var(--link-hover);
   }
-  .active {
-      border-bottom: 2px solid #f09228;
+  #navbar li a.active {
+      color: var(--link-hover);
+      border-bottom: 1px solid var(--link-hover);
   }
   .ImageBorder
   {
@@ -105,7 +138,7 @@
       aspect-ratio: 1 / 1;
       margin: 0 auto;
       overflow: hidden;
-      background-color: #f7f7f7;
+      background-color: var(--media-bg);
   }
 
   .project-media-cell {
@@ -213,4 +246,43 @@ a[aria-label="LinkedIn"] .contact-icon {
 .contact-links a:focus .contact-icon {
   opacity: 1;
   transform: translateY(-1px);
+}
+
+/* The GitHub and Scholar marks read poorly on dark backgrounds;
+   render them as a uniform light monochrome there */
+[data-theme="dark"] a[aria-label="GitHub"] .contact-icon,
+[data-theme="dark"] a[aria-label="Google Scholar"] .contact-icon {
+  filter: brightness(0) invert(0.9);
+}
+
+/* Theme toggle: a minimal half-filled circle that rotates on switch */
+#theme-toggle {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 1000000;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--nav-link);
+  transition: color .2s ease;
+}
+#theme-toggle:hover {
+  color: var(--link-hover);
+}
+#theme-toggle:focus-visible {
+  outline: 2px solid var(--link-hover);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+#theme-toggle svg {
+  display: block;
+  margin: 0 auto;
+  transition: transform .45s ease;
+}
+[data-theme="dark"] #theme-toggle svg {
+  transform: rotate(180deg);
 }

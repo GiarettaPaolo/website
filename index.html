@@ -4,16 +4,33 @@
 <head>
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <link rel="icon" type="image/x-icon" href="images/hexagon.ico?v=2">
+  <script type="text/javascript">
+    // Apply the saved (or OS-preferred) theme before first paint to avoid a flash.
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
   <script type="text/javascript" src="js/gtag.js"></script>
   <script type="text/javascript" src="js/hidebib.js"></script>
   <title>Paolo Giaretta</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link href="css/styles.css?v=2" rel="stylesheet" type="text/css">
+  <link href="css/styles.css?v=6" rel="stylesheet" type="text/css">
   <link href="css/narrow_main.css?v=2" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+<button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+    <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M12 3.5 a8.5 8.5 0 0 0 0 17 z" fill="currentColor"/>
+  </svg>
+</button>
 <table style="width:100%;max-width:950px;" border="0" align="center" cellspacing="0" cellpadding="20">
   <tr><td>
 
@@ -114,7 +131,7 @@
   <tr class="project-entry">
     <td class="project-media-cell" width="26%" valign="top" align="center">
       <a class="project-visual realdoor-visual" href="https://realdoor-boston.vercel.app/" target="_blank" aria-label="Visit the RealDoor website">
-        <img class="project-visual-image" src="images/realdoor-logo.svg?v=3" data-still-src="images/realdoor-logo.svg?v=3" data-hover-src="images/realdoor-demo-hover.gif?v=3" alt="RealDoor demo preview">
+        <img class="project-visual-image" src="projects/realdoor/realdoor-logo.svg" data-still-src="projects/realdoor/realdoor-logo.svg" data-hover-src="projects/realdoor/realdoor-demo-hover.gif" alt="RealDoor demo preview">
       </a>
     </td>
     <td class="project-copy-cell" width="74%" valign="top">
@@ -139,7 +156,7 @@
   <tr class="project-entry">
     <td class="project-media-cell" width="26%" valign="top" align="center">
       <a class="project-visual jaxtaylor-visual" href="https://github.com/GiarettaPaolo/jaxtaylor" target="_blank" aria-label="View the jaxtaylor repository on GitHub">
-        <img class="project-visual-image" src="images/jaxtaylor-graph.png" data-still-src="images/jaxtaylor-graph.png" data-hover-src="images/jaxtaylor-demo-hover.gif?v=2" alt="Taylor step computational graph for x' = sin(x+1)">
+        <img class="project-visual-image" src="projects/jaxtaylor/jaxtaylor-graph.png" data-still-src="projects/jaxtaylor/jaxtaylor-graph.png" data-hover-src="projects/jaxtaylor/jaxtaylor-demo-hover.gif" alt="Taylor step computational graph for x' = sin(x+1)">
       </a>
     </td>
     <td class="project-copy-cell" width="74%" valign="top">
@@ -159,7 +176,7 @@
   <tr class="project-entry">
     <td class="project-media-cell" width="26%" valign="top" align="center">
       <a class="project-visual river-pollution-visual" href="https://github.com/GiarettaPaolo/river-pollution" target="_blank" aria-label="View the river-pollution repository on GitHub">
-        <img class="project-visual-image" src="images/river-pollution-thumbnail.png" data-still-src="images/river-pollution-thumbnail.png" data-hover-src="images/river-pollution-pde-hover.png" alt="Finite element mesh with pollutant concentration field and velocity arrows">
+        <img class="project-visual-image" src="projects/river-pollution/river-pollution-thumbnail.png" data-still-src="projects/river-pollution/river-pollution-thumbnail.png" data-hover-src="projects/river-pollution/river-pollution-pde-hover.png" alt="Finite element mesh with pollutant concentration field and velocity arrows">
       </a>
     </td>
     <td class="project-copy-cell" width="74%" valign="top">
@@ -207,6 +224,7 @@
 
 <script src="js/project-preview.js?v=2"></script>
 <script src="js/navscroll.js"></script>
+<script src="js/theme.js"></script>
 </body>
 
 </html>
