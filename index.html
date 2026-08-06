@@ -114,7 +114,7 @@
   <tr class="project-entry">
     <td class="project-media-cell" width="26%" valign="top" align="center">
       <a class="project-visual realdoor-visual" href="https://realdoor-boston.vercel.app/" target="_blank" aria-label="Visit the RealDoor website">
-        <img class="project-visual-image" src="images/realdoor-logo.svg" data-still-src="images/realdoor-logo.svg" data-hover-src="images/realdoor-demo-hover.gif?v=3" alt="RealDoor demo preview">
+        <img class="project-visual-image" src="images/realdoor-logo.svg?v=3" data-still-src="images/realdoor-logo.svg?v=3" data-hover-src="images/realdoor-demo-hover.gif?v=3" alt="RealDoor demo preview">
       </a>
     </td>
     <td class="project-copy-cell" width="74%" valign="top">
@@ -152,6 +152,26 @@
         <a href="javascript:toggleblock('jaxtaylor_desc')">description</a>
         <p align="justify">
           <i id="jaxtaylor_desc" style="display:none;"><strong>jaxtaylor</strong> is a native JAX high-order adaptive Taylor ODE integrator that reimplements the algorithm of <a href="https://github.com/bluescarni/heyoka" target="_blank">heyoka</a> (bit-exact step size) as a first-class JAX primitive, fully composable with <code>jit</code>, <code>vmap</code>, and <code>grad</code> without leaving JAX. Eager calls hit a compiled C kernel, <code>jit</code> lowers to an FFI custom call, <code>vmap</code> maps to a SIMD-across-batch kernel, and differentiation integrates the variational system on the same machinery &mdash; one entry point, no user-facing knobs. It is faster than heyoka on CPU in every regime measured, and batched integrations of small systems auto-route to a fused per-trajectory CUDA kernel that runs the whole adaptive loop in a single launch. It also ships event detection with Taylor-polynomial root isolation and a drop-in reimplementation of the <a href="https://github.com/bluescarni/heyoka.py" target="_blank">heyoka.py</a> API.</i>
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr class="project-entry">
+    <td class="project-media-cell" width="26%" valign="top" align="center">
+      <a class="project-visual river-pollution-visual" href="https://github.com/GiarettaPaolo/river-pollution" target="_blank" aria-label="View the river-pollution repository on GitHub">
+        <img class="project-visual-image" src="images/river-pollution-thumbnail.png" data-still-src="images/river-pollution-thumbnail.png" data-hover-src="images/river-pollution-pde-hover.png" alt="Finite element mesh with pollutant concentration field and velocity arrows">
+      </a>
+    </td>
+    <td class="project-copy-cell" width="74%" valign="top">
+      <p>
+        <heading id="river-pollution">Bottom-up Implementation of FEM with SUPG Stabilization</heading><br>
+        <b>Paolo Giaretta</b>
+      </p>
+      <div class="paper" id="river-pollution_links">
+        <a href="https://github.com/GiarettaPaolo/river-pollution" target="_blank">code</a> |
+        <a href="javascript:toggleblock('river-pollution_desc')">description</a>
+        <p align="justify">
+          <i id="river-pollution_desc" style="display:none;">A bottom-up Python implementation of the Finite Element Method: mesh handling, assembly of the discretized system, and solution are all built from scratch rather than relying on an off-the-shelf FEM library. The main focus is on convection-dominated flows, where the standard Galerkin solution develops spurious oscillations, and on SUPG stabilization (streamline diffusion), which adds artificial diffusion along streamlines to recover accurate, oscillation-free solutions. We apply the method to simulate river pollution, tracking the concentration of a pollutant transported by the river flow. Part of the discretization procedure builds on the <a href="https://edu.epfl.ch/coursebook/en/numerical-approximation-of-pdes-MATH-451" target="_blank">EPFL Numerical Approximation of PDEs</a> course.</i>
         </p>
       </div>
     </td>

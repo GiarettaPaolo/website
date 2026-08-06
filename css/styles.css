@@ -126,6 +126,10 @@
       background-color: transparent;
   }
 
+  .project-visual.river-pollution-visual {
+      background-color: transparent;
+  }
+
   .project-visual-image {
       display: block;
       width: 100%;
