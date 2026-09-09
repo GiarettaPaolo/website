@@ -159,6 +159,17 @@
       background-color: transparent;
   }
 
+  .project-visual.newton-matching-visual {
+      width: 100%;
+      max-width: 200px;
+      aspect-ratio: 1753 / 788;
+      background-color: transparent;
+  }
+
+  .project-visual.newton-matching-visual .project-visual-image {
+      object-fit: contain;
+  }
+
   .project-visual.river-pollution-visual {
       background-color: transparent;
   }
